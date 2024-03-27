@@ -24,7 +24,7 @@ This Theme comes with a built-in gulp/webpack task automation. Sass files will b
 - `$ npm install`
 - Run the **`watch`** script
 - `$ npm run dev`
-- Modify `/assets/main.scss` and `/assets/main.js`
+- Modify `/assets/custom.scss` and `/assets/custom.js`
 - Test the Theme
 - Run the **`build`** script
 - `$ npm run build`
@@ -32,7 +32,7 @@ This Theme comes with a built-in gulp/webpack task automation. Sass files will b
 ## Technology
 
 - [Bootstrap](https://github.com/twbs/bootstrap), [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE)
-- [jQuery] 
+- [jQuery] (https://jquery.com/), [MIT license](https://jquery.com/license/)
 - [Sass](https://github.com/sass/sass), [MIT license](https://github.com/sass/sass/blob/stable/MIT-LICENSE)
 - [webpack](https://github.com/webpack/webpack), [MIT license](https://github.com/webpack/webpack/blob/master/LICENSE)
 - [@wordpress/scripts](https://github.com/WordPress/gutenberg/tree/trunk/packages/scripts), [GPLv2+ and Mozilla Public License v2.0](https://github.com/WordPress/gutenberg/blob/trunk/LICENSE.md)
