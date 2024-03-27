@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "es2015",
+
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "es2017",
+    "noImplicitAny": false,
+    "outDir": "Output",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports":  true
+
+  }
+}

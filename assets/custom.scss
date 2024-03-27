@@ -1,0 +1,150 @@
+// Compile "custom.scss" as "css/custom.css"
+
+
+:root {
+	--containerPadding: 150px;
+}
+
+$font-family-sans-serif: Arial, sans-serif;
+$font-family-serif: Arial, sans-serif;
+$font-family-monospace: Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+body {
+  font-family: $font-family-base;
+}
+
+
+
+a {
+	transition: all .3s ease-in-out;
+  text-decoration: none;
+}
+
+/* MOBILE MENU */ 
+
+@media screen and (min-width: 1200px) {
+	ul.dropdown-menu
+{
+	display: block !important;
+    left: -25px;
+    margin-top: var(--bs-dropdown-spacer);
+    top: 100%;
+	transition: all .5s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+	background-color: #fff !important;
+}
+
+div#navbar ul li:hover ul.dropdown-menu{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+}
+
+@media screen and (max-width: 1200px) {
+	button.navbar-toggler {
+    border: 0;
+		position: relative;
+		z-index: 999;
+		box-shadow: none !important;
+		transition: all .3s ease-in-out;
+  }
+
+	button.navbar-toggler:hover {
+		opacity: .7;
+	}
+
+  .navbar-icon-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  html body .bar1,
+  html body .bar2,
+  html body .bar3 {
+    display: block;
+		border-radius: 50px !important;
+		transition: all 1s ease-in-out;
+  }
+
+	button.navbar-toggler {
+		span {
+			background-image: none;
+		}
+
+		.bar1 {
+			transform: translate(0, 6px) rotate(-45deg);
+			width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+		border-radius: 50px !important;
+		}
+
+		.bar2 {
+			opacity: 0;
+			width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+		border-radius: 50px !important;
+
+		}
+
+		.bar3 {
+			transform: translate(0, -12px) rotate(45deg);
+			width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+		border-radius: 50px !important;
+
+		}
+	}
+ 
+
+
+
+  button.navbar-toggler.collapsed {
+		.bar1 {
+			transform: translate(0) rotate(0) !important;
+			width: 37px !important;
+			background-color: #000 !important;
+		}
+
+		.bar2 {
+			opacity: 1 !important;
+			width: 31px !important;
+			background-color: #000 !important;
+		}
+
+		.bar3 {
+			transform: translate(0) rotate(0) !important;
+			width: 19px !important;
+			background-color: #000 !important;
+	}
+}
+
+ul.dropdown-menu {
+	border: 0;
+	box-shadow: none;
+}
+/* END MOBILE MENU */
+}
+
+// CONTAINER 
+
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+	max-width: 100%; 
+	padding-left: var(--containerPadding) !important;
+	padding-right: var(--containerPadding) !important;
+}
